@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <!-- <div ng-app="myApp">
+        <div ng-controller="myCtrl">
+            First Name : <input type="text" ng-model="firstName">
+            Last Name : <input type="text" ng-model="lastName">
+            Full Name : {{ firstName + " " +lastName }}
+        </div>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.firstName = "";
+            $scope.lastName = "";
+            });
+    </script> -->
+
+    <!-- <div ng-app="myApp">
+        <div ng-controller="myCtrl">
+            Enter Quantity : <input type="number" ng-model="qty">
+            Enter Price : <input type="number" ng-model="price">
+            Total Cost : {{ qty * price }}
+        </div>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) {
+                $scope.qty = 0;
+                $scope.price = 0;
+                });
+        </script> -->
+        <!--
+        <div ng-app="myApp" ng-init="student={ firstName='A', lastName=B'' }">
+                First Name : <input type="text" ng-model="firstName">
+                Last Name : <input type="text" ng-model="lastName">
+                Full Name : {{ firstName +''+ lastName }}
+        </div>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myctrl', function($scope){
+                $scope.student = "student.firstName";
+                $scope.student = "student.lastName";
+            });
+        </script> -->
+
+        <div ng-app="myApp" ng-init="pointer=[1,4,3,4,5]">
+            number : <input type="number" ng-model="num">
+            Search : {{ pointer[num]}}
+        </div>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myctrl', function($scope){
+                $scope.num=0;
+                $scope.pointer="$scope.Search";
+            });
+        </script>
+    </div>
+</body>
+</html>

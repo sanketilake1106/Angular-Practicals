@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div ng-app="">
+        <p>Name: <input type="text" ng-model="name"/></p>
+        <!-- <p ng-bind="name"></p> -->
+         <p>Name: {{name}}</p>
+    <div ng-app="2" ng-init="firstName='Sanket'">
+        <p>Name is <span ng-bind="firstName"></span></p>
+        {{ 5+10 }}
+    </div>
+    {{ 5+5 }}
+</div>
+</body>
+</html>
