@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        <select ng-model="selectedOption" ng-options="option for option in options"></select>
+        <p>You Selected : {{ selectedOption }}</p>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.options = ['Option 1', 'Option 2', 'Option 3',];
+            $scope.selectedOption = $scope.options[0];
+            });
+    </script> -->
+
+    <div ng-app="ngchangeApp" ng-controller="ngchangeCtrl">
+        <h2>AngularJS ng-change Event with Dropdownlist</h2>
+        <select ng-options="user.name for user in arrlist" ng-change="getdetails()" ng-model="userselected">
+            <option value="">---Select User---</option>
+        </select>
+        <br /><br />
+        <div style="padding:10px; border:1px solid black; width:300px; font-weight:bold" ng-show="result">
+            Hi Welcome {{userselected.name}}
+            <br>Age : {{ userselected.age }}
+            <br>Location : {{ userselected.location }}
+        </div>
+    </div>
+    <script src="practical.js"></script>
+</body>
+</html>
